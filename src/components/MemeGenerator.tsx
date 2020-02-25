@@ -45,6 +45,7 @@ export class MemeGenerator extends Component<{}, State> {
     const randomMemeImg = this.state.allMemesImgs[randNum]["url"];
     console.log(randNum);
     this.setState({ randomImage: randomMemeImg });
+    // init download
   }
 
   download = () => {
@@ -79,6 +80,7 @@ export class MemeGenerator extends Component<{}, State> {
           <h2 className="top">{topText}</h2>
           <h2 className="bottom">{bottomText}</h2>
         </div>
+        <button>Download</button>
       </div>
     );
   }
