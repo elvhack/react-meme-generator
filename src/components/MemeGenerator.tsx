@@ -80,7 +80,7 @@ export class MemeGenerator extends Component<{}, State> {
           <h2 className="top">{topText}</h2>
           <h2 className="bottom">{bottomText}</h2>
         </div>
-        <button>Download</button>
+        <button onClick={this.download}>Download</button>
       </div>
     );
   }
