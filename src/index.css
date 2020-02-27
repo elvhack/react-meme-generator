@@ -43,6 +43,11 @@ header > p {
   background: #6441a5;
 }
 
+.meme-form > input {
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: center;
+}
 .meme-form > input::-webkit-input-placeholder {
   font-family: VT323, monospace;
   font-size: 25px;
@@ -71,8 +76,8 @@ header > p {
 }
 
 .meme > img {
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
 }
 
 .meme > h2 {
