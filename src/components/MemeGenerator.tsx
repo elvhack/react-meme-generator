@@ -47,6 +47,11 @@ export class MemeGenerator extends Component<{}, State> {
     this.setState({ randomImage: randomMemeImg });
   }
 
+  download = () => {
+    console.log("dl lancé");
+    console.log("dl lancé test 2");
+  };
+
   render() {
     const { topText, bottomText, randomImage } = this.state;
 
