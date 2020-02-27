@@ -3,27 +3,19 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header";
 import MemeGenerator from "./components/MemeGenerator";
+import Background from "./components/Background";
+import Subtitle from "./components/Subtitle";
+import Title from "./components/Title";
+
+const image =
+  "https://images.unsplash.com/photo-1555448248-2571daf6344b?w=1920&q=100";
 
 function App() {
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <Header />
-      <MemeGenerator />
-    </div>
+    <Background image={image}>
+      <Title text="JSMonday Rocks" />
+      <Subtitle text="Let's generate a beautiful image out of this React scene" />
+    </Background>
   );
 }
 
